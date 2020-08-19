@@ -6,6 +6,7 @@ In this repositary, Doc2Vec and TF-IDF are utilized to generate pharagraph vecto
 
 TF-IDF has been largely used to process latent semantic analysis with cosine similarity. 
 Doc2Vec inherit the two Neural network functions in Word2Vec but and a paragraph ID, which can transform the paragraph vectors to a more complex space i.e. 100 - 400 dimensions for one paragraph. It can also take the order of words in considerration, which is an advantage comparing to TF-IDF. 
+
 ![](images/OCR%20Data%20Mining.png)
 FG.1 FLow Process fot data mining
 
@@ -15,6 +16,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 ## Observation and Conclusion
 1. Trade-off of dimension reduction tools (SVD, tSNE, PCA) on TF-IDF paragraph vectors: SVD is generally better than the others according to the 2D visualization. MDS might be the best since TF-IDF + cosine similarity require a non-Euclidean dimension reduction as the result of cosine_similarity does not includes the magnitude of textual vectors.
+
 ![](images/SVD%20mapping_TF-IDF%20vectors.png)
 FG.2 SVD mapping_TF-IDF vectors
 
