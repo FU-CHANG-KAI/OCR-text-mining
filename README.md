@@ -14,7 +14,7 @@ FG.1 FLow Process fot data mining
 
 ## Installation
 ```python
-gensim.models.doc2vec
+from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from sklearn.feature_extraction.text import TfidfVectorizer
 ```
 
