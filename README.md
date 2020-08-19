@@ -5,9 +5,10 @@ Thus, natural language processing and data mining techniques become critical to 
 In this repositary, Doc2Vec and TF-IDF are utilized to generate pharagraph vectors. 
 
 TF-IDF has been largely used to process latent semantic analysis with cosine similarity. 
-Doc2Vec inherit the two Neural network functions in Word2Vec but and a paragraph ID, which can transform the paragraph vectors to a more complex space i.e. 100 - 400 dimensions for one paragraph. It can also take the order of words in considerration, which is an advantage comparing to TF-IDF. 
 
-![](images/OCR%20Data%20Mining.png)
+Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragraph ID, which can transform the paragraph vectors to a more complex space i.e. 100 - 400 dimensions for one paragraph. It can also take the order of words in considerration, which is an advantage comparing to TF-IDF. 
+
+![](images/OCR%20Data%20Mining.png| width=100)
 
 FG.1 FLow Process fot data mining
 
