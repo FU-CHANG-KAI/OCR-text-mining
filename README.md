@@ -7,10 +7,10 @@ In this repositary, Doc2Vec and TF-IDF are utilized to generate pharagraph vecto
 TF-IDF has been largely used to process latent semantic analysis with cosine similarity. 
 Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragraph ID, which can transform the paragraph vectors to a more complex space i.e. 100 - 400 dimensions for one paragraph. It can also take the order of words in considerration, which is an advantage comparing to TF-IDF. 
 
-![](images/OCR%20Data%20Mining.png|=250x250)
+![](images/OCR%20Data%20Mining.png| width =48)
 
 ![](https://github.com/FU-CHANG-KAI/OCR-data-mining/blob/master/image/Silhouette%20Score_doc2vec_SVD.png=20x20)
-FG.1 FLow Process fot data mining
+FG.1 FLow chart for OCR Data Mining task
 
 ## Installation
 ```python
