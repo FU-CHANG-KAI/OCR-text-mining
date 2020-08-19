@@ -9,7 +9,7 @@ Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragrap
 
 ![](images/OCR%20Data%20Mining.png|=250x250)
 
-![test](https://github.com/FU-CHANG-KAI/OCR-data-mining/blob/master/image/Silhouette%20Score_doc2vec_SVD.png=100x100)
+![](https://github.com/FU-CHANG-KAI/OCR-data-mining/blob/master/image/Silhouette%20Score_doc2vec_SVD.png=20x20)
 FG.1 FLow Process fot data mining
 
 ## Installation
