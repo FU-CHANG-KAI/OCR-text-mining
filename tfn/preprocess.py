@@ -1,5 +1,5 @@
 from collections import Counter
-
+from scrapt import scrapt_html_to_df
 import os
 import string
 import re
@@ -44,25 +44,31 @@ def _has_digits(token):
     return any(char.isdigit() for char in token)
 
 class Dataset():
-    def __init__(self, strip_handles=True, 
-                                strip_rt=True, 
-                                strip_digits=True,
-                                strip_hashtags=False,
-                                test_size=0.3):
+    def __init__(self, mode, strip_handles=True, 
+                             strip_rt=True, 
+                             strip_digits=True,
+                             strip_hashtags=False,
+                             test_size=0.3):
         # Get raw data
         self.corpus, self.y = self._get_training_data()
 
         # 10 April: Preprocess 'contents' using nltk and spacy and get back to the DataFrame
 
-        self.X = self._tokenize_with_lemma(self.corpus, 
+        if mode == "tf_idf":
+            self.X = self._tokenize_with_lemma_tfidf(self.corpus, 
+                                            strip_handles, 
+                                            strip_rt,
+                                            strip_digits)
+        elif mode == "doc2vec":
+            self.X = self._tokenize_with_lemma_d2v(self.corpus, 
                                             strip_handles, 
                                             strip_rt,
                                             strip_digits)
 
     def _get_training_data(self):
-        df = pickle_file.load('books_0819.pkl')
-        X = df['contents'].to_numpy()
-        y = df['book_name'].to_numpy()
+        df = scrapt_html_to_df
+        X = df['contents'].tolist()
+        y = df['book_name'].tolist()
         print("Complete to get_training_data")
         return X, y
 
@@ -75,7 +81,7 @@ class Dataset():
         for text in corpus:
             # Tokenize the document.
             tokens = tokenizer.tokenize(text.lower())
-   
+
             #tokens = [lemmatizer.lemmatize(token) for token in tokens]
             tokens = [lemmatizer.lemmatize(token) for token in tokens]
             
@@ -105,5 +111,7 @@ class Dataset():
         return output
 
 if __name__ == '__main__':
-    ds = Dataset()  
-    print(ds.X)
+    ds = Dataset("doc2vec")  
+
+    return ds.X
+    pickle_file.save(ds.X)

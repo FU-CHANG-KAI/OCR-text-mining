@@ -26,8 +26,7 @@ def scrapt_html_to_df():
             text_list = [tag.get_text() for tag in ocr_tags] #extract text
             text = ' '.join(text_list)
             if text.strip() != '':
-                all_text = all_text + text + ' ' #concat text in each page and add to dataframe        
-        
+                all_text = all_text + text + " " #concat text in each page and add to dataframe        
         # print(book_name)
         # write all pages for processed book to dataframe
         books.loc[book_id] = [book_name, all_text]

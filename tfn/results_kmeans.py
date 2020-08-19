@@ -1,5 +1,4 @@
 import pickle_file
-import list_to_csv 
 from models import kmeans
 from feature_extraction import doc2vec
 from feature_extraction import tf_idf

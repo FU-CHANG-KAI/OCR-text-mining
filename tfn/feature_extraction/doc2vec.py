@@ -1,4 +1,6 @@
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
+from preprocess import Dataset
+import pickle_file
 
 def doc2vec(doc, vec_size, max_epoch=100, alpha=0.025):
     ## prepare doc2vec input - list of taggedDocument
@@ -39,3 +41,9 @@ def doc2vec_to_vectors(model):
         feature_vectors.append(model.docvecs[i])
     
     return feature_vectors    
+
+
+
+
+        
+
