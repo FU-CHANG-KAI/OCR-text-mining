@@ -10,6 +10,7 @@ Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragrap
 <div align=center><img src="image/OCR-flow%20chart.png" width="700"></div>
 
 <center>Figure.1 FLow chart for OCR Data Mining task </center>
+
 ## Installation
 ```python
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
@@ -20,7 +21,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 1. Trade-off of dimension reduction tools (SVD, tSNE, PCA) on TF-IDF paragraph vectors:  MDS might be the best since TF-IDF + cosine similarity require a non-Euclidean dimension reduction as the result of cosine_similarity does not includes the magnitude of textual vectors. Below chart shows SVD is generally better than tSNE according to the 2D visualization.
 <div align=center><img src="image/SVD%20mapping_TF-IDF%20vectors.png" width="500"></div>
 
-<div align=center>######Figure.2 SVD mapping TF-IDF vectors</div>
+<div align=center>Figure.2 SVD mapping TF-IDF vectors</div>
 
 <div align=center><img src="image/tSNE%20mapping_TF-IDF%20vectors.png" width="500"></div>
 
