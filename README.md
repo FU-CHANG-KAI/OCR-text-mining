@@ -9,7 +9,7 @@ Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragrap
 
 <img src="image/OCR-flow%20chart.png" width="500">
 
-FG.1 FLow chart for OCR Data Mining task
+_Figure.1 FLow chart for OCR Data Mining task_
 
 ## Installation
 ```python
@@ -21,19 +21,19 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 1. Trade-off of dimension reduction tools (SVD, tSNE, PCA) on TF-IDF paragraph vectors:  MDS might be the best since TF-IDF + cosine similarity require a non-Euclidean dimension reduction as the result of cosine_similarity does not includes the magnitude of textual vectors. Below chart shows SVD is generally better than tSNE according to the 2D visualization.
 <img src="image/SVD%20mapping_TF-IDF%20vectors.png" width="500">
 
-FG.2 SVD mapping_TF-IDF vectors
+_Figure.2 SVD mapping_TF-IDF vectors_
 
 <img src="image/tSNE%20mapping_TF-IDF%20vectors.png" width="500">
 
-FG.3 tSNE mapping_TF-IDF vectors
+_Figure.3 tSNE mapping_TF-IDF vectors_
 
 2. Monitor a potentially better cluster number by Elbow curve and Silhouette score
 
 <img src="image/kmeans%20clustering%20of%20tf_idf%2BMDS.png" width="500">
-FG.4 Elbow curve for TF-IDF + MDS 
+_Figure.4 Elbow curve for TF-IDF + MDS_
 
 <img src="image/Silhouette%20Score_TF-IDF_MDS.png" width="500">
-FG.5 Silhouette Score_TF-IDF_MDS
+_Figure.5 Silhouette Score_TF-IDF_MDS_
 
 ## Source of data
 The data is provided by Msc Data Science at the Uiversity of Southampton. 
