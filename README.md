@@ -8,8 +8,9 @@ TF-IDF has been largely used to process latent semantic analysis with cosine sim
 Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragraph ID, which can transform the paragraph vectors to a more complex space i.e. 100 - 400 dimensions for one paragraph. It can also take the order of words in considerration, which is an advantage comparing to TF-IDF. 
 
 <div align=center><img src="image/OCR-flow%20chart.png" width="700"></div>
-
+<div align=center>
 _Figure.1 FLow chart for OCR Data Mining task_
+</div>
 
 ## Installation
 ```python
@@ -42,11 +43,4 @@ The dataset is 24 OCR books which contains 300 - 1500 pages.
 All of them were written in English.
 
 ## Contributing 
-Fell free to contact me at fuchangkai153@gmail.com if you have any query.
-
-我們從這一行開始。
-
-兩個換行符號分開了這行和前面那一行，所以這會變成 **分開的段落** 。
-
-這行也是個分開的段落，不過……
-只有一個換行符號分開這行，所以這是 *同段落* 中的分開兩行。
+Feel free to contact me at fuchangkai153@gmail.com if you have any query.
