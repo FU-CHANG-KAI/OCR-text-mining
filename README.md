@@ -31,8 +31,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 ## Source of data
-The data is provided by Msc Data Science at the Uiversity of Southampton. 
-I am not permitted to upload the original dataset here.
+The data is provided by **Msc Data Science at the Uiversity of Southampton**. 
+I am not able to upload the original dataset here.
 The dataset is 24 OCR books which contains 300 - 1500 pages. 
 All of them were written in English.
 
