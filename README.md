@@ -8,10 +8,8 @@ TF-IDF has been largely used to process latent semantic analysis with cosine sim
 Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragraph ID, which can transform the paragraph vectors to a more complex space i.e. 100 - 400 dimensions for one paragraph. It can also take the order of words in considerration, which is an advantage comparing to TF-IDF. 
 
 <div align=center><img src="image/OCR-flow%20chart.png" width="700"></div>
-<div align=center>
-_Figure.1 FLow chart for OCR Data Mining task_
-</div>
 
+<center>Figure.1 FLow chart for OCR Data Mining task </center>
 ## Installation
 ```python
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
