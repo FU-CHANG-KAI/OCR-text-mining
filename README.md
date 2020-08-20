@@ -37,4 +37,4 @@ The dataset is 24 OCR books which contains 300 - 1500 pages.
 All of them were written in English.
 
 ## Contributing 
-Feel free to contact me at fuchangkai153@gmail.com if you have any query.
+Feel free to contact me via fuchangkai153@gmail.com if you have any query.
