@@ -9,7 +9,7 @@ Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragrap
 
 ![](images/OCR%20Data%20Mining.png)
 
-<img src="images/OCR%20Data%20Mining.png"/>
+<img src="images/OCR%20Data%20Mining.png" width="400">
 
 FG.1 FLow chart for OCR Data Mining task
 
