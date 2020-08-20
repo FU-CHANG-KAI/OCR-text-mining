@@ -9,8 +9,7 @@ Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragrap
 
 <div align=center><img src="image/OCR-flow%20chart.png" width="700"></div>
 
-<center>Figure.1 FLow chart for OCR Data Mining task </center>
-
+                              *Figure.1 FLow chart for OCR Data Mining task*
 ## Installation
 ```python
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
