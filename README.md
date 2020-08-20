@@ -19,28 +19,21 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 ## Observation and Conclusion
 1. Trade-off of dimension reduction tools (SVD, tSNE, PCA) on TF-IDF paragraph vectors:  MDS might be the best since TF-IDF + cosine similarity require a non-Euclidean dimension reduction as the result of cosine_similarity does not includes the magnitude of textual vectors. Below chart shows SVD is generally better than tSNE according to the 2D visualization.
-
-![](images/SVD%20mapping_TF-IDF%20vectors.png =250x250)
+<img src="image/SVD%20mapping_TF-IDF%20vectors.png" width="500">
 
 FG.2 SVD mapping_TF-IDF vectors
 
-![](images/tSNE%20mapping_TF-IDF%20vectors.png)
+<img src="image/tSNE%20mapping_TF-IDF%20vectors.png" width="500">
 
 FG.3 tSNE mapping_TF-IDF vectors
 
 2. Monitor a potentially better cluster number by Elbow curve and Silhouette score
 
-![](image/kmeans%20clustering%20of%20tf_idf%2BMDS.png)
-
+<img src="image/kmeans%20clustering%20of%20tf_idf%2BMDS.png" width="500">
 FG.4 Elbow curve for TF-IDF + MDS 
 
-
-![](image/Silhouette%20Score_TF-IDF_MDS.png)
-
+<img src="image/Silhouette%20Score_TF-IDF_MDS.png" width="500">
 FG.5 Silhouette Score_TF-IDF_MDS
-
-
-
 
 ## Source of data
 The data is provided by Msc Data Science at the Uiversity of Southampton. 
