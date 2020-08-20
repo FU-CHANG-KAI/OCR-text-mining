@@ -25,7 +25,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 2. Monitor a potentially better cluster number by Elbow curve and Silhouette score
 
-<div align=center><img src="image/kmeans%20clustering%20of%20tf_idf%2BMDS.png" width="500"></div>
+<div align=center><img src="image/kmeans%20clustering%20of%20tf_idf%2BMDS.png" width="550"></div>
 
 <div align=center><img src="image/Silhouette%20Score_TF-IDF_MDS.png" width="500"></div>
 
