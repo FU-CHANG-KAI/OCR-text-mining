@@ -7,7 +7,7 @@ In this repositary, Doc2Vec and TF-IDF are utilized to generate pharagraph vecto
 TF-IDF has been largely used to process latent semantic analysis with cosine similarity. 
 Doc2Vec inherits the two Neural network functions in Word2Vec but and a paragraph ID, which can transform the paragraph vectors to a more complex space i.e. 100 - 400 dimensions for one paragraph. It can also take the order of words in considerration, which is an advantage comparing to TF-IDF. 
 
-<img src="image/OCR-flow%20chart.png" width="500">
+<div align=center><img src="image/OCR-flow%20chart.png" width="500"></div>
 
 _Figure.1 FLow chart for OCR Data Mining task_
 
@@ -19,20 +19,20 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 ## Observation and Conclusion
 1. Trade-off of dimension reduction tools (SVD, tSNE, PCA) on TF-IDF paragraph vectors:  MDS might be the best since TF-IDF + cosine similarity require a non-Euclidean dimension reduction as the result of cosine_similarity does not includes the magnitude of textual vectors. Below chart shows SVD is generally better than tSNE according to the 2D visualization.
-<img src="image/SVD%20mapping_TF-IDF%20vectors.png" width="500">
+<div align=center><img src="image/SVD%20mapping_TF-IDF%20vectors.png" width="500"></div>
 
 _Figure.2 SVD mapping_TF-IDF vectors_
 
-<img src="image/tSNE%20mapping_TF-IDF%20vectors.png" width="500">
+<div align=center><img src="image/tSNE%20mapping_TF-IDF%20vectors.png" width="500"></div>
 
 _Figure.3 tSNE mapping_TF-IDF vectors_
 
 2. Monitor a potentially better cluster number by Elbow curve and Silhouette score
 
-<img src="image/kmeans%20clustering%20of%20tf_idf%2BMDS.png" width="500">
+<div align=center><img src="image/kmeans%20clustering%20of%20tf_idf%2BMDS.png" width="500"></div>
 _Figure.4 Elbow curve for TF-IDF + MDS_
 
-<img src="image/Silhouette%20Score_TF-IDF_MDS.png" width="500">
+<div align=center><img src="image/Silhouette%20Score_TF-IDF_MDS.png" width="500"></div>
 _Figure.5 Silhouette Score_TF-IDF_MDS_
 
 ## Source of data
