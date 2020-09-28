@@ -1,4 +1,4 @@
-# OCR-Tata-Mining
+# OCR-Text-Mining
 Optical character recognition (OCR) is a widely used technique to store the old books digitally. However, the recognition error is generated very often in the process of OCR since some of the books are several century ago....
 In addition, to categorize and store these old books in a proper way will cost a big human force. 
 Thus, natural language processing and data mining techniques become critical to deal with this.
